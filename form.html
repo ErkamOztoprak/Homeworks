@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Action ve Canvas Örneği</title>
+  <style>
+    /* CSS Stilleri */
+  </style>
+</head>
+<body>
+  <h1>Form Action Örneği</h1>
+
+  <form action="kaydet.php" method="get" target="_blank">
+    <label for="name">İsim:</label>
+    <input type="text" id="name" name="name" placeholder="Adınızı girin" required><br>
+
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required><br>
+
+    <input type="submit" value="Gönder">
+  </form>
+
+  <form action="kaydet.php" method="post" target="_self">
+    <label for="age">Yaş:</label>
+    <input type="number" id="age" name="age" min="1" max="100" required><br>
+
+    <label for="gender">Cinsiyet:</label>
+    <select id="gender" name="gender" required>
+      <option value="erkek">Erkek</option>
+      <option value="kadın">Kadın</option>
+    </select><br>
+
+    <input type="submit" value="Gönder">
+  </form>
+
+  <h1>Canvas Örneği</h1>
+
+  <canvas id="myCanvas" width="400" height="200"></canvas>
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+
+    // Dikdörtgen çiz
+    context.fillStyle = "red";
+    context.fillRect(50, 50, 100, 100);
+
+    // Daire çiz
+    context.fillStyle = "blue";
+    context.beginPath();
+    context.arc(250, 100, 50, 0, 2 * Math.PI);
+    context.fill();
+  </script>
+
+  
+</body>
+</html>

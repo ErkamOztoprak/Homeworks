@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Türleri ve Meta Bilgisi</title>
+  <meta name="author" content="John Doe">
+  <meta name="description" content="HTML'deki giriş türleri ">
+  <meta name="generator" content="erkam oztoprak">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .input-container {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 120px;
+      font-weight: bold;
+    }
+
+    input[type="range"] {
+      width: 200px;
+    }
+
+    input[type="image"] {
+      width: 100px;
+    }
+
+    input[type="url"],
+    input[type="email"] {
+      width: 300px;
+    }
+
+    input[type="date"],
+    input[type="time"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"] {
+      width: 200px;
+    }
+
+    input[type="hidden"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Giriş Türleri ve Meta Bilgisi</h1>
+
+  <div class="input-container">
+    <label for="hidden">Gizli:</label>
+    <input type="hidden" id="hidden" name="hidden" value="gizli değer">
+  </div>
+
+  <div class="input-container">
+    <label for="tel">Telefon:</label>
+    <input type="tel" id="tel" name="tel" placeholder="Telefon numarasını girin">
+  </div>
+
+  <div class="input-container">
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" placeholder="E-posta adresini girin">
+  </div>
+
+  <div class="input-container">
+    <label for="number">Sayı:</label>
+    <input type="number" id="number" name="number" min="1" max="100" step="1" value="50">
+  </div>
+
+  <div class="input-container">
+    <label for="range">Aralık:</label>
+    <input type="range" id="range" name="range" min="0" max="100" step="5" value="50">
+  </div>
+
+  <div class="input-container">
+    <label for="search">Arama:</label>
+    <input type="search" id="search" name="search" placeholder="Arama yapın...">
+  </div>
+
+  <div class="input-container">
+    <label for="image">Resim:</label>
+    <input type="image" id="image" name="image" src="path/to/image.jpg" alt="Gönder">
+  </div>
+
+  <div class="input-container">
+    <label for="week">Hafta:</label>
+    <input type="week" id="week" name="week">
+  </div>
+
+  <div class="input-container">
+    <label for="url">URL:</label>
+    <input type="url" id="url"
